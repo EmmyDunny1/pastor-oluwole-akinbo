@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Pastor Oluwole Akinbo",
-  description: "It's a website for Pastor Oluwole Akinbo ",
+  description: "It's a personal website for Pastor Oluwole Akinbo",
 };
 
 export default function RootLayout({
