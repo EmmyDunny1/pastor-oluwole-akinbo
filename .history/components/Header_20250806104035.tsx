@@ -40,7 +40,7 @@ export default function Header() {
     <header className="bg-white dark:bg-gray-800 text-[#171717] dark:text-white shadow-md sticky top-0 z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
         <Link href="/">
-          <h1 className="text-2xl font-bold">Dad&apos;s Retirement</h1>
+          <h1 className="text-2xl font-bold">Dad&aposirement</h1>
         </Link>
 
         {/* Desktop Nav */}
