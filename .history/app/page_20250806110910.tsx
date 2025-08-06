@@ -9,7 +9,7 @@ export default function Home() {
 <div> <section className="max-w-4xl mx-auto text-center py-16 px-4">
       <h2 className="text-4xl font-bold mb-4">Honoring a Life of Dedication</h2>
       <p className="text-lg mb-6">
-        Join us in celebrating our beloved father&apos;s impactful career and legacy.
+        Join us in celebrating our beloved fathers impactful career and legacy.
         Share your heartfelt messages, watch inspiring tributes, and support his next chapter.
       </p>
       <div className="flex flex-col sm:flex-row justify-center gap-4">
