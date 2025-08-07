@@ -57,7 +57,7 @@ export default function TestimonyForm() {
         });
         const result = await res.json();
         videoUrl = result.secure_url;
-      } catch {
+      } catch (error) {
         alert("Video upload failed. Please try again.");
         setUploading(false);
         return;
