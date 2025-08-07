@@ -51,7 +51,7 @@ export default function Header() {
               href={href}
               className={`${
                 pathname === href
-                  ? "text-blue-600 border-b-2 decoration-0  border-blue-600"
+                  ? "text-blue-600 border-b-2 decoration-0 ring-offset-blue-800 p border-blue-600"
                   : "hover:text-blue-600 transition"
               } ${
                 label === "Gift"

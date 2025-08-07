@@ -44,14 +44,14 @@ export default function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-6 text-md  items-center font-medium">
+        <nav className="hidden md:flex gap-6 text-sm font-medium items-center font-bol">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
               className={`${
                 pathname === href
-                  ? "text-blue-600 border-b-2 decoration-0  border-blue-600"
+                  ? "text-blue-600 border-b-2 border-blue-600"
                   : "hover:text-blue-600 transition"
               } ${
                 label === "Gift"
@@ -94,7 +94,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white min-h-screen dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 px-4 py-4 space-y-4 text-base font-medium text-left"
+            className="md:hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 px-4 py-4 space-y-4 text-base font-medium text-left"
           >
             {navLinks.map(({ href, label }) => (
               <Link

@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import TestimonyForm from "@/components/TestimonyForm"; 
 
 
 
@@ -18,7 +17,7 @@ export default function Home() {
         <Link href="/gift" className="bg-green-600 text-white px-6 py-3 rounded font-semibold">Send a Gift</Link>
       </div>
     </section></div>
-    <TestimonyForm />
+    
    
    </>
   );
