@@ -1,0 +1,42 @@
+/* BooksCarousel.module.css */
+.neonHalo {
+  box-shadow:
+    0 0 40px 10px rgba(255, 80, 255, 0.08),
+    0 0 80px 20px rgba(120, 60, 255, 0.06),
+    0 0 160px 30px rgba(255, 110, 60, 0.04);
+}
+
+/* Preorder neon button pulse (subtle) */
+.preorderNeon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 90, 255, 0.28),
+    rgba(120, 60, 255, 0.22),
+    rgba(255, 110, 60, 0.22)
+  );
+  filter: blur(10px);
+  z-index: -1;
+  animation: neonPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes neonPulse {
+  0% {
+    transform: scale(0.98);
+    opacity: 0.8;
+    filter: blur(8px);
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 1;
+    filter: blur(18px);
+  }
+  100% {
+    transform: scale(0.98);
+    opacity: 0.8;
+    filter: blur(8px);
+  }
+}
