@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build --no-lint",
     "start": "next start"
+    
   },
   "dependencies": {
     "@budpay/react": "^1.0.13",
