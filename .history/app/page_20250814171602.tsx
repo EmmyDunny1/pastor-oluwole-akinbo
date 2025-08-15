@@ -8,6 +8,7 @@ import HeroPage from "./HeroPage/page";
 import HomeAbout from '@/components/HomeAbout'
 import HomeRetirement from "@/components/HomeRetirement";
 import HomeGallery from "@/components/HomeGallery";
+import ContactPage from "./Contact/page";
 import HomeContact from "@/components/HomeContact";
 
 

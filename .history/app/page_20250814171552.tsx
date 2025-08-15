@@ -8,7 +8,7 @@ import HeroPage from "./HeroPage/page";
 import HomeAbout from '@/components/HomeAbout'
 import HomeRetirement from "@/components/HomeRetirement";
 import HomeGallery from "@/components/HomeGallery";
-import HomeContact from "@/components/HomeContact";
+import ContactPage from "./Contact/page";
 
 
 
@@ -49,7 +49,7 @@ export default function Home() {
 
     <BookLaunch />
     <HomeGallery />
-    <HomeContact />
+    <
    </>
   );
 }

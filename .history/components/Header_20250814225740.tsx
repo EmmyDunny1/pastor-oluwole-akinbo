@@ -55,7 +55,7 @@ export default function Header() {
               href={href}
               className={`${
                 pathname === href
-                  ? "text-gray-600 border-b-2 decoration-0  border-green-600"
+                  ? "text-green-600 border-b-2 decoration-0  border-green-600"
                   : "hover:text-white transition"
               } ${
                 label === "Gift"
@@ -98,7 +98,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white min-h-screen dark:bg-gray-800 border-t border-green-500 dark:border-gray-700 px-4 py-4 space-y-4 text-base font-medium text-left"
+            className="md:hidden bg-white min-h-screen dark:bg-gray-800 border-t border-green-500 dark:border-green-700 px-4 py-4 space-y-4 text-base font-medium text-left"
           >
             {navLinks.map(({ href, label }) => (
               <Link
@@ -107,11 +107,11 @@ export default function Header() {
                 onClick={() => setIsOpen(false)}
                 className={`block w-full ${
                   pathname === href
-                    ? " text-green-400 font-semibold"
-                    : "hover:text-green-400 transition"
+                    ? " text-gray-400 font-semibold"
+                    : "hover:text-gray-400 transition"
                 } ${
                   label === "Gift"
-                    ? "bg-gray-800 text-gray-100 px-4 py-2 rounded-md hover:bg-green-500 hover:text-white  border-1 border-white transition"
+                    ? "bg-gray-800 text-gray-100 px-4 py-2 rounded-md hover:bg-gray-100  border-1 border-white transition"
                     : ""
                 }`}
               >

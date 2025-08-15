@@ -98,7 +98,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white min-h-screen dark:bg-gray-800 border-t border-green-500 dark:border-gray-700 px-4 py-4 space-y-4 text-base font-medium text-left"
+            className="md:hidden bg-white min-h-screen  dark:bg-gray-800 border-b border-green-500 dark:border-gray-700 px-4 py-4 space-y-4 text-base font-medium text-left"
           >
             {navLinks.map(({ href, label }) => (
               <Link
