@@ -1,10 +1,12 @@
 "use client";
 
+import { Suspense } from "react";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
-export default function SuccessPage() {
+// Extract the actual UI into a separate client component
+function SuccessContent() {
   const searchParams = useSearchParams();
   const reference = searchParams.get("reference");
   const [status, setStatus] = useState("Verifying payment...");
@@ -27,10 +29,10 @@ export default function SuccessPage() {
           setStatus("✅ Payment Successful");
           setDetails(data.data);
         } else {
-          setStatus("❌ Payment Failed or Pending");
+          setStatus("Payment Failed or Pending");
         }
       } catch (err) {
-        setStatus("⚠️ Error verifying payment");
+        setStatus("Error verifying payment");
       }
     };
 
@@ -59,5 +61,14 @@ export default function SuccessPage() {
         </div>
       )}
     </div>
+  );
+}
+
+//Wrap it inside Suspense so Next.js can handle hydration
+export default function SuccessPage() {
+  return (
+    <Suspense fallback={<div className="text-center p-10">Loading...</div>}>
+      <SuccessContent />
+    </Suspense>
   );
 }

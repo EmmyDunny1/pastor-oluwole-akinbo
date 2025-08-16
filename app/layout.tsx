@@ -4,13 +4,13 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-import { Merriweather, Poppins } from 'next/font/google';
+import { Merriweather, Poppins } from "next/font/google";
 
-const merriweather = Merriweather({ subsets: ['latin'], weight: ['400', '700'] });
-const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600'] });
+// const merriweather = Merriweather({ subsets: ['latin'], weight: ['400', '700'] });
+// const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600'] });
 
-export const merriweatherClass = merriweather.className;
-export const poppinsClass = poppins.className;
+// export const merriweatherClass = merriweather.className;
+// export const poppinsClass = poppins.className;
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,7 +39,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
-        
+
         <Footer />
       </body>
     </html>
