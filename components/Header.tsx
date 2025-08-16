@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
-import { BiMenuAltRight, BiX, BiSun, BiMoon } from "react-icons/bi";
+import { useState } from "react";
+import { BiMenuAltRight, BiX } from "react-icons/bi";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -15,36 +15,19 @@ const navLinks = [
   { href: "/Retirement-Service", label: "Retirement Service" },
   { href: "/Gallery", label: "Gallery" },
   { href: "/Contact", label: "Contact" },
-
 ];
 
 export default function Header() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const darkPref = localStorage.getItem("theme") === "dark";
-      setIsDarkMode(darkPref);
-      document.documentElement.classList.toggle("dark", darkPref);
-    }
-  }, []);
 
   const toggleMenu = () => setIsOpen(!isOpen);
-
-  const toggleDarkMode = () => {
-    const newMode = !isDarkMode;
-    setIsDarkMode(newMode);
-    localStorage.setItem("theme", newMode ? "dark" : "light");
-    document.documentElement.classList.toggle("dark", newMode);
-  };
 
   return (
     <header className="bg-white dark:bg-gray-800 text-[#171717] dark:text-white shadow-md sticky top-0 z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
         <Link href="/">
-          <h1 className="text-2xl font-bold">Dad&apos;s Retirement</h1>
+          <h1 className="text-md md:text-lg font-bold border p-2 text-white rounded-3xl hover:text-green-400 hover:border-green-500 ">Pastor Akinbo</h1>
         </Link>
 
         {/* Desktop Nav */}
@@ -66,24 +49,10 @@ export default function Header() {
               {label}
             </Link>
           ))}
-          <button
-            onClick={toggleDarkMode}
-            className="ml-4 text-xl hover:text-blue-600 transition"
-            aria-label="Toggle dark mode"
-          >
-            {isDarkMode ? <BiSun /> : <BiMoon />}
-          </button>
         </nav>
 
         {/* Mobile Toggle */}
         <div className="md:hidden flex items-center gap-4">
-          <button
-            onClick={toggleDarkMode}
-            className="text-2xl hover:text-blue-600 transition"
-            aria-label="Toggle dark mode"
-          >
-            {isDarkMode ? <BiSun /> : <BiMoon />}
-          </button>
           <div className="text-3xl cursor-pointer" onClick={toggleMenu}>
             {isOpen ? <BiX /> : <BiMenuAltRight />}
           </div>
@@ -111,7 +80,7 @@ export default function Header() {
                     : "hover:text-green-400 transition"
                 } ${
                   label === "Gift"
-                    ? "bg-gray-800 text-gray-100 px-4 py-2 rounded-md hover:bg-green-500 hover:text-white  border-1 border-white transition"
+                    ? "bg-gray-100 text-gray-900 px-4 py-2 rounded-md hover:bg-green-500 hover:text-white  border-1 border-white transition"
                     : ""
                 }`}
               >

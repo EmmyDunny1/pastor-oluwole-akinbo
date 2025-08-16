@@ -90,7 +90,7 @@ export default function HeroPage() {
             {/* Overlay with glow and age */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col items-center justify-end p-4">
               <span className="text-lg sm:text-xl md:text-2xl text-white font-semibold drop-shadow-lg">
-                Age 70
+            
               </span>
             </div>
           </div>
