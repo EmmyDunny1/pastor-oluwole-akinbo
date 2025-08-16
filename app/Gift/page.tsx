@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 
 interface PaymentResponse {
   reference: string;
-  [key: string]: unknown; // ✅ no ESLint warning, works the same
+  [key: string]: unknown;
 }
 
 
