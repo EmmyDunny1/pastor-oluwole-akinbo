@@ -4,13 +4,6 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-import { Merriweather, Poppins } from "next/font/google";
-
-// const merriweather = Merriweather({ subsets: ['latin'], weight: ['400', '700'] });
-// const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600'] });
-
-// export const merriweatherClass = merriweather.className;
-// export const poppinsClass = poppins.className;
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,6 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Pastor Oluwole Akinbo",
   description: "It's a website for Pastor Oluwole Akinbo ",
+  icons: "/dadfavicon.png",
 };
 
 export default function RootLayout({
