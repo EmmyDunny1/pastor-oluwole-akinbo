@@ -96,7 +96,7 @@ export default function BookLaunch(): React.ReactNode {
           {/* Text Content */}
           <div className="w-full lg:w-2/3 z-10 px-3 lg:px-8 py-4 flex flex-col justify-center">
             <div className="inline-flex items-center gap-3 mb-3">
-              <span className="px-3 py-1 rounded-full text-sm md:text-2xl font-semibold text-white/95 bg-gradient-to-r from-pink-500 to-violet-500 shadow-sm">
+              <span className="px-3 py-1 rounded-full text-2xl font-semibold text-white/95 bg-gradient-to-r from-pink-500 to-violet-500 shadow-sm">
                 BOOK LAUNCH - 30TH AUG
               </span>
             </div>
