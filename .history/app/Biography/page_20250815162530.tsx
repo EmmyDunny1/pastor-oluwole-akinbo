@@ -17,7 +17,7 @@ export default function AboutPage() {
           {/* Image beside heading */}
           <div className="flex justify-center md:justify-start mb-6 md:mb-0">
              <Image
-              src="/others/Bio.jpg" 
+              src="/others/Bio.jpg" // same image used in HomeAbout
               alt="Pastor Oluwole Akinbo"
               width={250}
               height={250}
