@@ -42,7 +42,7 @@ export default function Payment() {
         createdAt: Timestamp.now(),
       });
 
-      console.log(" Payment stored in Firestore");
+      console.log("💾 Payment stored in Firestore");
       router.push("/success"); // ✅ Redirect to success page
     } catch (error) {
       console.error("❌ Error saving payment:", error);
@@ -70,7 +70,7 @@ export default function Payment() {
     debug: true,
     text: "Proceed to Pay",
     className:
-      "w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 rounded-md transition focus:outline-none focus:ring-2 focus:ring-green-400 disabled:opacity-60",
+      "w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-md transition focus:outline-none focus:ring-2 focus:ring-blue-400 disabled:opacity-60",
   };
 
   return (
