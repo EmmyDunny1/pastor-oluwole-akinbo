@@ -16,7 +16,12 @@ type Book = {
 const books: Book[] = [
   {
     title: "Old Testament Saints",
-    author: "This book is the first part of the Systematic and Expository Teachings on the Old Testament Saints, beginning from Abraham the Father of  Faith and God’s Friend. It is always a good confession to sing: Abraham’s blessings are mine (2x). I am blessed in the morning, in the noon, and in the evening.  Abraham’s blessings are mine without actually knowing what it means. Many people do not understand how Abraham got to that level of friendship and covenant with God. However, in this book, the writer x-rayed the life pattern of Abraham to a very logical conclusion. Reading through this book will inspire you on the need to obey God’s call, even in the face of challenges—as discovered in Chapter One: The Unselfish Lifestyle of Abraham (allowing his younger close relative and mentee to take the upper hand in a decisive choice). Also noted in Chapter Two: His Courage and Covenant, we see his obedient lifestyle clearly revealed.",
+    author: "This book is the first part of the Systematic and Expository Teachings on the Old Testament Saints, beginning from Abraham the Father of  Faith and God’s Friend. It is always a good confession to sing: Abraham’s blessings are mine (2x). I am blessed in the morning, in the noon, and in the evening.Abraham’s blessings are mine. —without actually knowing what it means. 
+
+Many people do not understand how Abraham got to that level of 
+friendship and covenant with God. However, in this book, the writer 
+x-rayed the life pattern of Abraham to a very logical conclusion. 
+",
     image: "/books/Old_Test_Saints.png",
     link: "https://wa.me/2349165750991",
   },
@@ -78,7 +83,7 @@ export default function BooksCarousel() {
           {/* Book Details */}
           <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
             <motion.h3
-              className="text-2xl md:text-4xl font-bold text-white"
+              className="text-3xl md:text-4xl font-bold text-white"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
@@ -86,7 +91,7 @@ export default function BooksCarousel() {
               {books[current].title}
             </motion.h3>
             <motion.p
-              className="text-sm md:text-md text-justify text-gray-300"
+              className="text-lg text-gray-300"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3 }}

@@ -20,7 +20,7 @@ const BOOKS: Book[] = [
     title: "The Book Of Nehemiah",
     subtitle: "Book By Pastor Akinbo",
     description:
-      "Nehemiah is a gem of a book in the spiritual lessons which it teaches us. It tells how, under the leadership of Nehemiah, the walls of Jerusalem were re-built by the returned remnant and how the people themselves were reinstructured in the law which God has given to their nation long before...",
+      "A breathtaking tale of betrayal, romance, and redemption that pulls you into the streets of Paris and refuses to let go.",
     cover: "/books/Book_Of_Neh.png",
     link: "/Books",
   },
@@ -29,7 +29,7 @@ const BOOKS: Book[] = [
     title: "The Secret Of A Happy Home",
     subtitle: "",
     description:
-      "The plan of God from the beginning is that each family would be in peace, beacause this is what will ensure the fulfilment of God's plan on earth. Marriage started in the garden of...",
+      "A family saga of hidden truths, legacy, and the fight to protect what matters most.",
     cover: "/books/Secrets_Of__HM.png",
     link: "/Books",
   },
@@ -37,8 +37,7 @@ const BOOKS: Book[] = [
     id: 99,
     title: "OLD TESTAMENT SAINTS",
     subtitle: "Exclusive Prelaunch — Pastor Akinbo",
-    description: "This book is the first part of the Systematic and Expository Teachings on the Old Testament Saints, beginning from Abraham the Father of  Faith and God’s Friend. It is always a good confession to sing: Abraham’s blessings are mine (2x). I am blessed in the morning, in the noon, and in the evening.  Abraham’s blessings are mine without actually knowing what it means..",
-
+    description: ""This book is the first part of the Systematic and Expository Teachings on the Old Testament Saints, beginning from Abraham the Father of  Faith and God’s Friend. It is always a good confession to sing: Abraham’s blessings are mine (2x). I am blessed in the morning, in the noon, and in the evening.  Abraham’s blessings are mine without actually knowing what it means.",
     cover: "/books/Old_Test_Saints.png",
     link: "/Books",
     prelaunch: true,

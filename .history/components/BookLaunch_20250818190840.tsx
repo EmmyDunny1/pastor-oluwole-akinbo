@@ -29,7 +29,7 @@ const BOOKS: Book[] = [
     title: "The Secret Of A Happy Home",
     subtitle: "",
     description:
-      "The plan of God from the beginning is that each family would be in peace, beacause this is what will ensure the fulfilment of God's plan on earth. Marriage started in the garden of...",
+      "A family saga of hidden truths, legacy, and the fight to protect what matters most.",
     cover: "/books/Secrets_Of__HM.png",
     link: "/Books",
   },
