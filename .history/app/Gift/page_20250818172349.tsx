@@ -158,8 +158,8 @@ export default function Payment() {
 
            
           </div>
-  <Link className="block bg-white rounded mt-4 text-center font-bold" 
-  href="/DirectTransfer"><p className="text-center text-green-950 leading-0.5 text-[11px] font-bold p-4 flex-">
+  <Link className="block bg-white p-4 rounded mt-4 text-center  leading-0.5 text-[11px] font-bold" 
+  href="/DirectTransfer"><p className="text-center text-2xl text-green-950 leading-0.5 text-[11px] font-bold flex-">
               For Direct Payment Without Card, Click To View Account Number
             </p>
             </Link>

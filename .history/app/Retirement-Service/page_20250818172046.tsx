@@ -159,7 +159,7 @@ export default function RetirementServicePage() {
                 className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-transform hover:scale-[1.02]"
                 aria-label="Add to Google Calendar"
               >
-                 Add to Google Calendar
+                📅 Add to Google Calendar
               </a>
 
               <a

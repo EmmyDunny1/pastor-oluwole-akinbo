@@ -159,7 +159,7 @@ export default function RetirementServicePage() {
                 className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-transform hover:scale-[1.02]"
                 aria-label="Add to Google Calendar"
               >
-                 Add to Google Calendar
+                📅 Add to Google Calendar
               </a>
 
               <a
@@ -186,7 +186,7 @@ export default function RetirementServicePage() {
                 href="/Gift"
                 className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-transform hover:scale-[1.02]"
               >
-                 Send a Gift
+                🎁 Send a Gift
               </Link>
             </div>
           </div>
