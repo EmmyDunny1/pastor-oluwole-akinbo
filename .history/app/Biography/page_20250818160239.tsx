@@ -18,7 +18,7 @@ export default function AboutPage() {
           <div className="flex justify-center md:justify-start mb-6 md:mb-0">
              <Image
               src="/others/bio.jpg" 
-              alt="bio image"
+              alt="biogr"
               width={250}
               height={250}
               className="rounded-full shadow-lg border-4 border-white"
