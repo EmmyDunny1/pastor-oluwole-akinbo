@@ -25,8 +25,8 @@ export default function HomeAbout() {
           <div className="w-full md:w-1/2">
             <div className="relative w-full  h-0 pb-[66%]  overflow-hidden shadow-2xl">
              <Image
-  src="/others/bio.jpg"
-  alt="bio image"
+  src="/others/Bio.jpg"
+  alt="Pastor Oluwole Akinbo"
   fill
   className="object-cover object-top"
   sizes="(max-width: 768px) 100vw, 50vw"
