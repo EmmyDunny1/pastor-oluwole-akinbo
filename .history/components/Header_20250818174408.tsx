@@ -24,7 +24,7 @@ export default function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="bg-[#171717] dark:bg-gray-800 text-[#171717] dark:text-white shadow-md sticky top-0 z-50 transition-all duration-300">
+    <header className="bg-white dark:bg-gray-800 text-[#171717] dark:text-white shadow-md sticky top-0 z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
         <Link href="/">
           <h1 className="text-md md:text-lg font-bold border p-2 text-white rounded-3xl hover:text-green-400 hover:border-green-500 ">Pastor Akinbo</h1>
@@ -59,6 +59,7 @@ export default function Header() {
         </div>
       </div>
 
+    <header className="bg-white dark:bg-gray-800 text-[#171717] dark:text-white shadow-md sticky top-0 z-50 transition-all duration-300">
       {/* Mobile Nav */}
       <AnimatePresence>
         {isOpen && (
@@ -80,7 +81,7 @@ export default function Header() {
                     : "hover:text-green-400 transition"
                 } ${
                   label === "Gift"
-                    ? "bg-gray-100 text-gray-900 px-4 py-2 rounded-md hover:bg-green-500 hover:text-white  transition"
+                    ? "bg-gray-100 text-gray-900 px-4 py-2 rounded-md hover:bg-green-500 hover:text-white  border-1 border-white transition"
                     : ""
                 }`}
               >
