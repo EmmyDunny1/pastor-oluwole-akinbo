@@ -63,7 +63,7 @@ export default function ContactPage() {
         />
         <button
           type="submit"
-          className="bg-green-600 font-bold text-white p-2 rounded w-full"
+          className="bg-blue-500 text-white p-2 rounded w-full"
         >
           Send Message
         </button>
@@ -71,7 +71,7 @@ export default function ContactPage() {
 
         {/* Social Media Links */}
         <div className="flex justify-center space-x-6 mt-6">
-          <a href="https://web.facebook.com/oluwole.akinbo.50" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-700">
+          <a href="https://web.facebook.com/oluwole.akinbo.50" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800">
             <FaFacebookF size={25} />
           </a>
           <a href="mailto:oluwolleakinbo@gmail.com" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-500">

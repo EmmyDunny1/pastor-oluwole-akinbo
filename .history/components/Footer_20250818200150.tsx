@@ -17,7 +17,7 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div className="flex space-x-5 text-sm font-medium text-gray-300">
+        <div className="flex space-x-6 text-sm font-medium text-gray-300">
           <Link href="/" className="hover:text-green-400">
             Home
           </Link>
@@ -27,8 +27,8 @@ export default function Footer() {
           <Link href="/Gift" className="hover:text-green-400">
             Gift
           </Link>
-          <Link href="/SubmitTestimony" className="hover:text-green-400">
-             Share Testimony
+          <Link href="/" className="hover:text-green-400">
+            Testimonies
           </Link>
           <Link href="/DirectTransfer" className="hover:text-green-400">
             Direct Transfer

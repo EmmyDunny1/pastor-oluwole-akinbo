@@ -112,7 +112,7 @@ export default function BookLaunch(): React.ReactNode {
                 {prelaunch.subtitle}
               </div>
             )}
-            <p className="mt-4 text-white/85 text-justify max-w-xl">
+            <p className="mt-4 text-white/85 max-w-xl">
               {prelaunch.description}
             </p>
             <div className="mt-6">

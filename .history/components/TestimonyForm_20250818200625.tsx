@@ -166,7 +166,7 @@ export default function TestimonyForm() {
 
         <button
           type="submit"
-          className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition disabled:opacity-60"
+          className="bg-gree-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition disabled:opacity-60"
           disabled={uploading}
         >
           {uploading ? "Uploading..." : "Submit"}

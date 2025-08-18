@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Celebration Title */}
         <div className="text-center md:text-left">
-          <h2 className="text-xl font-semibold text-green-500">
+          <h2 className="text-xl font-semibold text-yellow-500">
             Celebration of Dad
           </h2>
           <p className="text-gray-400 mt-1 text-sm">
@@ -17,20 +17,17 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div className="flex space-x-5 text-sm font-medium text-gray-300">
-          <Link href="/" className="hover:text-green-400">
-            Home
-          </Link>
+        <div className="flex space-x-6 text-sm font-medium text-gray-300">
           <Link href="/Books" className="hover:text-green-400">
             Books
           </Link>
           <Link href="/Gift" className="hover:text-green-400">
             Gift
           </Link>
-          <Link href="/SubmitTestimony" className="hover:text-green-400">
-             Share Testimony
+          <Link href="/Testimonies" className="hover:text-green-400">
+            Testimonies
           </Link>
-          <Link href="/DirectTransfer" className="hover:text-green-400">
+          <Link href="/AccountNumTransfer" className="hover:text-green-400">
             Direct Transfer
           </Link>
         </div>

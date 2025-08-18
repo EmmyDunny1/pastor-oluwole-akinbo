@@ -6,7 +6,7 @@ export default function HomeContact() {
     <div className="bg-gradient-to-b from-white to-gray-50 min-h-screen flex flex-col">
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center py-20 px-6">
-        <h1 className=" text-2xl md:text-4xl font-extrabold text-gray-900 mb-4">
+        <h1 className=" text-4xl font-extrabold text-gray-900 mb-4">
           A Book That Changes Everything
         </h1>
         <p className="text-lg text-gray-600 max-w-2xl mb-8">

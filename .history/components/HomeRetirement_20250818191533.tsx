@@ -51,7 +51,7 @@ export default function HomeRetirement() {
               href="/Retirement-Service"
               className="bg-green-600 hover:bg-green-700 text-white px-7 py-3 rounded-full font-semibold text-lg shadow-lg transition-transform transform hover:scale-105"
             >
-               View Service Details
+              📅 View Service Details
             </Link>
             <Link
               href="/SubmitTestimony"

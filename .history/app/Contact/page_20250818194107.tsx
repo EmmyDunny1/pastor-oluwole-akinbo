@@ -63,7 +63,7 @@ export default function ContactPage() {
         />
         <button
           type="submit"
-          className="bg-green-600 font-bold text-white p-2 rounded w-full"
+          className="bg-green-500 font-bold text-white p-2 rounded w-full"
         >
           Send Message
         </button>
