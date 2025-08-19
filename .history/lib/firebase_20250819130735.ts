@@ -31,6 +31,4 @@ const app1 = !getApps().some(app => app.name === "secondary")
   ? initializeApp(firebaseConfig1, "secondary")
   : getApp("secondary"); // secondary app
 
- const db1 = getFirestore(app1);
-
- export { db1 };
+export const db1 = getFirestore(app1);

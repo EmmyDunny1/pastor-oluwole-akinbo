@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { sendMessage } from "@/lib/messages/firebase";
+import { sendMessage } from "@/lib/messages";
 
 export default function ContactForm() {
   const [name, setName] = useState("");

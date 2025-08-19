@@ -17,7 +17,7 @@ const app = !getApps().length
 
 export const db = getFirestore(app);
 
-// contact message
+// ✅ Second Firebase project (give it a different name!)
 const firebaseConfig1 = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY_2,
   authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN_2,
@@ -31,6 +31,4 @@ const app1 = !getApps().some(app => app.name === "secondary")
   ? initializeApp(firebaseConfig1, "secondary")
   : getApp("secondary"); // secondary app
 
- const db1 = getFirestore(app1);
-
- export { db1 };
+export const db1 = getFirestore(app1);

@@ -33,4 +33,4 @@ const app1 = !getApps().some(app => app.name === "secondary")
 
  const db1 = getFirestore(app1);
 
- export { db1 };
+ ex`  `
