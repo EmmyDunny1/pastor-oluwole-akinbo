@@ -30,7 +30,7 @@ export default function Footer() {
           <Link href="/SubmitTestimony" className="hover:text-green-400">
              Share Testimony
           </Link>
-          <Link href="/Biography" className="hover:text-green-400">
+          <Link href="/DirectTransfer" className="hover:text-green-400">
             Biography
           </Link>
         </div>
