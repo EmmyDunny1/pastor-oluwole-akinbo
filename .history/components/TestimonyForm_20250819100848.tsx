@@ -153,7 +153,7 @@ export default function TestimonyForm() {
 
         <div>
           <label className="block font-medium mb-1">Video Testimony (optional)</label>
-          <label htmlFor="video-upload" className="flex items-center gap-2 cursor-pointer bg-none  border border-gray-300 rounded-md px-4 py-2 w-[47%] md:w-[37%] hover:bg-gray-800 transition">
+          <label htmlFor="video-upload" className="flex items-center gap-2 cursor-pointer bg-none  border border-gray-300 rounded-md px-4 py- w-[47%] md:w-[37%] hover:bg-gray-800 transition">
             <FaRegFile className="text-xl text-gray-300" />
             <span>{formData.video ? formData.video.name : "Choose video file..."}</span>
             <input
@@ -166,7 +166,7 @@ export default function TestimonyForm() {
             />
           </label>
         </div>
-        <button className='flex mt-[-12px] mb-[px] md:text-md text-sm '>Kindly keep video testimony straight to point and concise, 2-3 mins</button>
+        <button className='flex my-[-2px]'>Kindly keep video testimony straight and concise, 2-3 mins</button>
         <button
           type="submit"
           className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition disabled:opacity-60"

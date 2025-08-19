@@ -91,13 +91,13 @@ export default function TestimonyForm() {
 
   return (
     <div className="max-w-2xl mx-auto p-6">
-      <div className='mb-4 text-center'>
-      <h2 className="text-2xl font-semibold  text-center">Share Your Testimony</h2>
-      <p className='text-green-400 italic'>Text Preferably</p>
-   </div>
+      <div></div>
+      <h2 className="text-2xl font-semibold mb-2 text-center">Share Your Testimony</h2>
+      <p>Text Preferably</p>
+   </div
 
       {submitted && (
-        <div className="bg-blue-100 text-green-900 p-4 rounded-md mb-4">
+        <div className="bg-blue-100 text-blue-900 p-4 rounded-md mb-4">
           Thank you! Your testimony has been submitted.
         </div>
       )}
@@ -166,7 +166,7 @@ export default function TestimonyForm() {
             />
           </label>
         </div>
-        <button className='flex mt-[-12px] mb-[px] md:text-md text-sm '>Kindly keep video testimony straight to point and concise, 2-3 mins</button>
+
         <button
           type="submit"
           className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition disabled:opacity-60"
@@ -175,7 +175,7 @@ export default function TestimonyForm() {
           {uploading ? "Uploading..." : "Submit"}
         </button>
 
-        
+        <button> </button>
       </form>
     </div>
   );

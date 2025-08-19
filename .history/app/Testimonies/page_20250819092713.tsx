@@ -72,7 +72,7 @@ export default function TestimoniesPage() {
                   />
                   {/* Overlay Play Button */}
                   <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-                    <FaPlay className="w-10 h-10" />
+                    <FaPlay className="w-10 h-10 text-gray-500" />
                   </div>
                 </div>
               ))}

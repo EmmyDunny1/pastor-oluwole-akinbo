@@ -54,7 +54,7 @@ export default function TestimoniesPage() {
           animate={{ opacity: 1, y: 0 }}
           className="bg-white rounded-2xl shadow-md p-6"
         >
-          <h2 className="text-lg md:text-2xl text-center text-gray-950 font-semibold mb-4"> Video Testimonies</h2>
+          <h2 className="text-2xl text-gray-950 font-semibold mb-4"> Video Testimonies</h2>
           {videoTestimonies.length === 0 ? (
             <p className="text-gray-500">No video testimonies yet.</p>
           ) : (
@@ -72,7 +72,7 @@ export default function TestimoniesPage() {
                   />
                   {/* Overlay Play Button */}
                   <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-                    <FaPlay className="w-10 h-10" />
+                    <FaPlay className="w-10 h-10 text-gray-500" />
                   </div>
                 </div>
               ))}
@@ -86,7 +86,7 @@ export default function TestimoniesPage() {
           animate={{ opacity: 1, y: 0 }}
           className="bg-white rounded-2xl shadow-md p-6"
         >
-          <h2 className=" text-lg md:text-2xl text-gray-950 text-center font-semibold mb-4">Written Testimonies</h2>
+          <h2 className="text-2xl text-gray-950 text-center font-semibold mb-4">Written Testimonies</h2>
           {textTestimonies.length === 0 ? (
             <p className="text-gray-500">No written testimonies yet.</p>
           ) : (

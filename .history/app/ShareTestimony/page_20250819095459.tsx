@@ -19,7 +19,7 @@ export default function SubmitTestimony() {
           Share Your Story
         </h1>
 
-        <p className="text-lg sm:text-xl text-gray-300 italic">
+        <p className="text-lg sm:text-xl text-gray-300">
           We invite you to celebrate the incredible impact of Pastor Samuel Oluwole Akinbo. 
           Your heartfelt testimonies honor his legacy and inspire countless others.  
           Speak from your heart and let your words shine as a tribute to his remarkable life of service.
