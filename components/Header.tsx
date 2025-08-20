@@ -30,7 +30,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-6 text-md  items-center font-medium">
+        <nav className="hidden md:flex gap-6 text-md items-center font-medium">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
@@ -38,10 +38,10 @@ export default function Header() {
               className={`${
                 pathname === href
                   ? "text-green-600 border-b-2 decoration-0  border-green-600"
-                  : "hover:text-white transition"
+                  : "hover:text-green-600 transition"
               } ${
                 label === "Gift"
-                  ? "bg-gray-100 text-gray-950 px-4 py-2 rounded-md hover:bg-green-500  hover:text-green-100 transition"
+                  ? "bg-gray-100 text-gray-950 px-4 py-2 rounded-md hover:bg-green-500  hover:text-white transition"
                   : ""
               }`}
             >
