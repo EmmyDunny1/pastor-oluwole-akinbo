@@ -48,7 +48,7 @@ export default function HomeContact() {
         <h2 className="text-3xl font-bold mb-4">Get Your Copy Today</h2>
         <p className="mb-6">Transform your life or touch someone else's with this inspiring book.</p>
         <Link
-          href="https://wa.me/2349165750991"
+          href="http://wa"
           className="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
         >
           Contact Us
