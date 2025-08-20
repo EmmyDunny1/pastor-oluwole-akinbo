@@ -17,7 +17,7 @@ export default function AboutPage() {
           {/* Image beside heading */}
           <div className="flex justify-center md:justify-start mb-6 md:mb-0">
              <Image
-              src="/others/bio.jpg" 
+              src="/gallery/bio.jpg" 
               alt="bio image"
               width={250}
               height={250}

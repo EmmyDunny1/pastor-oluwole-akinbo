@@ -25,7 +25,7 @@ export default function HomeAbout() {
           <div className="w-full md:w-1/2">
             <div className="relative w-full  h-0 pb-[66%]  overflow-hidden shadow-2xl">
              <Image
-  src="/others/bio.jpg"
+  src="/gallery/bio.jpg"
   alt="bio image"
   fill
   className="object-cover object-top"
