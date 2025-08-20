@@ -14,7 +14,7 @@ const navLinks = [
   { href: "/Gift", label: "Gift" },
   { href: "/Retirement-Service", label: "Retirement Service" },
   { href: "/Gallery", label: "Gallery" },
-  { href: "/Contact", label: "Contact" },
+  { href: "/https://wa.me/2349165750991", label: "Contact" },
 ];
 
 export default function Header() {
