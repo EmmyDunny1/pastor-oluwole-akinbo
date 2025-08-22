@@ -1,29 +1,25 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { collection, addDoc, Timestamp } from "firebase/firestore";
-import { db } from "@/lib/firebase";
-import { FaRegFile } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { useState } from 'react';
+import { collection, addDoc, Timestamp } from 'firebase/firestore';
+import { db } from '@/lib/firebase';
+import { FaRegFile } from 'react-icons/fa';
+import { motion } from 'framer-motion'  
 
 export default function TestimonyForm() {
   const [submitted, setSubmitted] = useState(false);
 
   const [formData, setFormData] = useState({
-    name: "",
-    state: "",
-    branch: "",
-    message: "",
+    name: '',
+    state: '',
+    branch: '',
+    message: '',
     video: null as File | null,
   });
 
-  const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >,
-  ) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
+    setFormData(prev => ({
       ...prev,
       [name]: value,
     }));
@@ -31,7 +27,7 @@ export default function TestimonyForm() {
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0] || null;
-    setFormData((prev) => ({
+    setFormData(prev => ({
       ...prev,
       video: file,
     }));
@@ -56,13 +52,10 @@ export default function TestimonyForm() {
       data.append("upload_preset", UPLOAD_PRESET || "");
 
       try {
-        const res = await fetch(
-          `https://api.cloudinary.com/v1_1/${CLOUD_NAME || ""}/video/upload`,
-          {
-            method: "POST",
-            body: data,
-          },
-        );
+        const res = await fetch(`https://api.cloudinary.com/v1_1/${CLOUD_NAME || ""}/video/upload`, {
+          method: "POST",
+          body: data,
+        });
         const result = await res.json();
         videoUrl = result.secure_url;
       } catch {
@@ -74,7 +67,7 @@ export default function TestimonyForm() {
 
     // Save testimony to Firestore
     try {
-      await addDoc(collection(db, "testimonies"), {
+      await addDoc(collection(db, 'testimonies'), {
         name: formData.name,
         state: formData.state,
         branch: formData.branch,
@@ -84,50 +77,51 @@ export default function TestimonyForm() {
       });
       setSubmitted(true);
       setFormData({
-        name: "",
-        state: "",
-        branch: "",
-        message: "",
+        name: '',
+        state: '',
+        branch: '',
+        message: '',
         video: null,
       });
-    } catch (_err) {
-      console.log("Something went wrong");
-    }
+    }catch (_err) {
+  console.log("Something went wrong");
+}
 
     setUploading(false);
   };
 
   return (
     <div className="max-w-2xl text-gray-100 bg-gray-900 mx-auto p-6">
-      <div>
-        <div className=" bg-gray-900 border-l-white text-white flex flex-col items-center py-4 md:py-6 px-4">
-          {/* Welcome Message */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-3xl text-center mb-12"
-          >
-            <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 text-green-400">
-              Share Your Story
-            </h1>
+<div>
+   <div className=" bg-gray-900 border-l-white text-white flex flex-col items-center py-4 md:py-6 px-4">
+      {/* Welcome Message */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="max-w-3xl text-center mb-12"
+      >
+        <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 text-green-400">
+          Share Your Story
+        </h1>
 
-            <p className="text-lg sm:text-xl bg-gray-800 text-gray-100 border-l-2 border-green-600 rounded-3xl border-solid p-4 talic ">
-              We invite you to celebrate the incredible impact of Pastor Samuel
-              Oluwole Akinbo. Your heartfelt testimonies honor his legacy and
-              inspire countless others. Speak from your heart and let your words
-              shine as a tribute to his remarkable life of service.
-            </p>
-          </motion.div>
-        </div>
-      </div>
+        <p  className="text-lg sm:text-xl bg-gray-800 text-gray-100 border-l-2 border-green-600 rounded-3xl border-solid p-4 talic ">
+          We invite you to celebrate the incredible impact of Pastor Samuel Oluwole Akinbo. 
+          Your heartfelt testimonies honor his legacy and inspire countless others.  
+          Speak from your heart and let your words shine as a tribute to his remarkable life of service.
+        </p>
+       
 
-      <div className="mb-2 text-center ">
-        <h2 className="text-2xl font-semibold  text-center">
-          Share Your Testimony
-        </h2>
-        <p className="text-green-400 italic">Text Preferably</p>
-      </div>
+      </motion.div>
+
+    </div>
+    </div>
+
+    
+      <div className='mb-2 text-center '>
+      <h2 className="text-2xl font-semibold  text-center">Share Your Testimony</h2>
+      <p className='text-green-400 italic'>Text Preferably</p>
+   </div>
 
       {submitted && (
         <div className="bg-blue-100 text-green-900 p-4 rounded-md mb-4">
@@ -135,10 +129,7 @@ export default function TestimonyForm() {
         </div>
       )}
 
-      <form
-        onSubmit={handleSubmit}
-        className="space-y-5"
-      >
+      <form onSubmit={handleSubmit} className="space-y-5">
         <div>
           <label className="block font-medium mb-1">Name</label>
           <input
@@ -188,17 +179,10 @@ export default function TestimonyForm() {
         </div>
 
         <div>
-          <label className="block font-medium mb-1">
-            Video Testimony (optional)
-          </label>
-          <label
-            htmlFor="video-upload"
-            className="flex items-center gap-2 cursor-pointer bg-none  border border-gray-300 rounded-md px-4 py-2 w-[47%] md:w-[37%] hover:bg-gray-800 transition"
-          >
+          <label className="block font-medium mb-1">Video Testimony (optional)</label>
+          <label htmlFor="video-upload" className="flex items-center gap-2 cursor-pointer bg-none  border border-gray-300 rounded-md px-4 py-2 w-[47%] md:w-[37%] hover:bg-gray-800 transition">
             <FaRegFile className="text-md md:text-xl text-gray-300" />
-            <span>
-              {formData.video ? formData.video.name : "Choose video file..."}
-            </span>
+            <span>{formData.video ? formData.video.name : "Choose video file..."}</span>
             <input
               id="video-upload"
               type="file"
@@ -209,9 +193,7 @@ export default function TestimonyForm() {
             />
           </label>
         </div>
-        <button className="flex mt-[-12px] mb-[px] md:text-md text-sm ">
-          Kindly keep video testimony straight to point and concise, 2-3 mins
-        </button>
+        <button className='flex mt-[-12px] mb-[px] md:text-md text-sm '>Kindly keep video testimony straight to point and concise, 2-3 mins</button>
         <button
           type="submit"
           className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition disabled:opacity-60"
@@ -219,6 +201,8 @@ export default function TestimonyForm() {
         >
           {uploading ? "Uploading..." : "Submit"}
         </button>
+
+        
       </form>
     </div>
   );

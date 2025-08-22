@@ -22,7 +22,7 @@ export default function Home() {
 
   
    <section className="max-w-7xl bg-gray-800 mx-auto text-center py-16 px-4">
-  <h2 className="text-4xl font-bold mb-4">As We Celebrate A Rare Gem</h2>
+  <h2 className="text-4xl text-gray-100 font-bold mb-4">As We Celebrate A Rare Gem</h2>
   <p className="text-lg mb-6 text-gray-200">
     Be part of honoring our beloved father&apos;s extraordinary journey. Share your personal messages, watch inspiring tributes, and help write the next chapter of his legacy.
   </p>
