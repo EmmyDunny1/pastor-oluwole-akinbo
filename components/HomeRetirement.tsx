@@ -26,7 +26,7 @@ export default function HomeRetirement() {
 
         {/* Text Section */}
         <div className="w-full lg:w-1/2 space-y-8 text-center lg:text-left">
-          <h2 className="text-5xl font-extrabold text-[#003366] leading-tight font-serif">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-[#003366] leading-tight font-serif">
             A Celebration of Service,  
             <span className="text-green-600"> Love </span> & Impact
           </h2>

@@ -74,24 +74,24 @@ export default function Payment() {
   };
 
   return (
-    <div className="min-h-[70vh] flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900 py-10 px-4">
+    <div className="min-h-[70vh] flex flex-col items-center justify-center  bg-gray-900 py-10 px-4">
       {/* Welcome Intro */}
       <div className="max-w-2xl text-center mb-10">
         <h2 className="text-3xl sm:text-4xl font-bold text-green-500  mb-4">
           Show Your Appreciation
         </h2>
-        <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300">
+        <p className="text-lg sm:text-xl text-gray-300">
           Thank you for choosing to honor Pastor Samuel Oluwole Akinbo. Your thoughtful gift 
           will celebrate his incredible journey and support him as he begins a new chapter. 
           Fill the form below to contribute with love and gratitude.
         </p>
-        <p className="mt-2 text-gray-500 dark:text-gray-400 italic">
+        <p className="mt-2 text-gray-400 italic">
           Every contribution is a meaningful tribute to decades of faithful service.
         </p>
       </div>
 
       {/* Payment Form */}
-      <div className="w-full max-w-md bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+      <div className="w-full max-w-md bg-gray-800 rounded-xl shadow-lg p-8">
         <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
           <input
             type="text"
@@ -100,7 +100,7 @@ export default function Payment() {
             value={form.first_name}
             onChange={handleChange}
             required
-            className="w-full border px-4 py-2 rounded-md dark:bg-gray-700 dark:text-white"
+            className="w-full border px-4 py-2 rounded-md bg-gray-700 text-white"
           />
           <input
             type="text"
@@ -109,7 +109,7 @@ export default function Payment() {
             value={form.last_name}
             onChange={handleChange}
             required
-            className="w-full border px-4 py-2 rounded-md dark:bg-gray-700 dark:text-white"
+            className="w-full border px-4 py-2 rounded-md bg-gray-700 text-white"
           />
           <input
             type="email"
@@ -118,7 +118,7 @@ export default function Payment() {
             value={form.email}
             onChange={handleChange}
             required
-            className="w-full border px-4 py-2 rounded-md dark:bg-gray-700 dark:text-white"
+            className="w-full border px-4 py-2 rounded-md bg-gray-700 text-white"
           />
           <input
             type="tel"
@@ -127,7 +127,7 @@ export default function Payment() {
             value={form.phone}
             onChange={handleChange}
             required
-            className="w-full border px-4 py-2 rounded-md dark:bg-gray-700 dark:text-white"
+            className="w-full border px-4 py-2 rounded-md bg-gray-700 text-white"
           />
           <input
             type="number"
@@ -137,7 +137,7 @@ export default function Payment() {
             onChange={handleChange}
             required
             min="100"
-            className="w-full border px-4 py-2 rounded-md dark:bg-gray-700 dark:text-white"
+            className="w-full border px-4 py-2 rounded-md bg-gray-700 text-white"
           />
           <input
             type="text"
@@ -146,7 +146,7 @@ export default function Payment() {
             value={form.description}
             onChange={handleChange}
             required
-            className="w-full border px-4 py-2 rounded-md dark:bg-gray-700 dark:text-white"
+            className="w-full border px-4 py-2 rounded-md dark:bg-gray-700 text-white"
           />
 
           {/* BudPay Payment Button */}

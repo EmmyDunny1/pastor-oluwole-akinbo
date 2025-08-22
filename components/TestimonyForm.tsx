@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { collection, addDoc, Timestamp } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import { FaRegFile } from 'react-icons/fa';
+import { motion } from 'framer-motion'  
 
 export default function TestimonyForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -90,8 +91,34 @@ export default function TestimonyForm() {
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-6">
-      <div className='mb-4 text-center'>
+    <div className="max-w-2xl bg-gray-900 mx-auto p-6">
+<div>
+   <div className=" bg-gray-900 border-l-white text-white flex flex-col items-center py-4 md:py-6 px-4">
+      {/* Welcome Message */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="max-w-3xl text-center mb-12"
+      >
+        <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 text-green-400">
+          Share Your Story
+        </h1>
+
+        <p  className="text-lg sm:text-xl bg-gray-800 border-l-2 border-green-600 rounded-3xl border-solid p-4 text-gray-300 italic ">
+          We invite you to celebrate the incredible impact of Pastor Samuel Oluwole Akinbo. 
+          Your heartfelt testimonies honor his legacy and inspire countless others.  
+          Speak from your heart and let your words shine as a tribute to his remarkable life of service.
+        </p>
+       
+
+      </motion.div>
+
+    </div>
+    </div>
+
+    
+      <div className='mb-2 text-center '>
       <h2 className="text-2xl font-semibold  text-center">Share Your Testimony</h2>
       <p className='text-green-400 italic'>Text Preferably</p>
    </div>

@@ -29,19 +29,7 @@ export default function HomeContact() {
         </div>
       </section>
 
-      {/* Features */}
-      {/* <section className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 py-16">
-        {[
-          { title: "Powerful Message", desc: "Deep insights that speak to the heart." },
-          { title: "Premium Quality", desc: "Designed with elegance and printed to last." },
-          { title: "Perfect for Gifting", desc: "A timeless treasure for loved ones." },
-        ].map((feature, i) => (
-          <div key={i} className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
-            <p className="text-gray-600">{feature.desc}</p>
-          </div>
-        ))}
-      </section> */}
+   
 
       {/* CTA */}
       <section className="text-center py-20 bg-green-600 text-white">

@@ -21,8 +21,8 @@ export default function Home() {
       <HeroPage/>
 
   
-   <section className="max-w-4xl mx-auto text-center py-16 px-4">
-  <h2 className="text-4xl font-bold mb-4">Celebrate a Remarkable Legacy</h2>
+   <section className="max-w-7xl bg-gray-800 mx-auto text-center py-16 px-4">
+  <h2 className="text-4xl font-bold mb-4">As We Celebrate A Rare Gem</h2>
   <p className="text-lg mb-6 text-gray-200">
     Be part of honoring our beloved father&apos;s extraordinary journey. Share your personal messages, watch inspiring tributes, and help write the next chapter of his legacy.
   </p>
@@ -31,7 +31,7 @@ export default function Home() {
       href="/SubmitTestimony"
       className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold transition"
     >
-      Share Your Tribute
+      Share Your Testimony
     </Link>
     <Link
       href="/Gift"
