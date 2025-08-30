@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/Biography", label: "Biography" },
   { href: "/SubmitTestimony", label: "Share Testimony" },
+  { href: "/Testimonies", label: "Testimonies" },
   { href: "/Books", label: "Books" },
   { href: "/Gift", label: "Gift" },
   { href: "/Retirement-Service", label: "Retirement Service" },
